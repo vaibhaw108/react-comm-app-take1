@@ -1,0 +1,9 @@
+.backdrop{
+    height: 250px;
+    width: "100%";
+}
+.backdrop_description{
+    font-size: 0.8rem;
+    color:rgb(122, 119, 119);
+    width: 300px;
+}
