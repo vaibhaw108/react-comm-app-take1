@@ -22,7 +22,7 @@ function Banner()  {
             }}
         >
             <div className="banner_contents">
-                <h1 className="banner_title"> Banner Info for Display </h1>
+                <h1 className="banner_title"> React Community App : 3003 </h1>
                 <div className='banner_buttons'>
                     <button className='banner_button'>My Jobs</button>
                     <button className='banner_button'>News Sentiment</button>

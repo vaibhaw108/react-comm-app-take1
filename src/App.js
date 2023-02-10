@@ -1,21 +1,17 @@
 import './App.css';
 //import Row from './Row';
 import Footer from './Components/Footer';
-//import requests from './requests';
 import Banner from './Components/Banner';
 import Nav from './Components/Nav.js';
 import RowJson from './RowJson';
+import requests from './requests';
 
 function App() {
   return (
     <div className="app">
       <Nav/>
       <Banner/>
-      <RowJson title ="Trending" rowpic="pic1.jpg" isLarge={true} movies2={DATA_ROW1}/>
-      <RowJson title ="Companies" rowpic="pic2.jpg"  />
-      <RowJson title ="Requirements" rowpic="pic3.jpg"  />
-      <RowJson title ="Frelance Opportunities" rowpic="pic4.jpg" />
-      <RowJson title ="Utilities" rowpic="pic5.jpg"/>
+      <RowJson title ="Trending Cloud" fetchUrl={requests.getTrendingCloud} isLarge={true}/>
       <Footer/>
     </div>
   );
@@ -458,3 +454,14 @@ const DATA_ROW1 = [
   }
 
 ]
+
+/*
+      <RowJson title ="Trending Now" rowpic="pic1.jpg" isLarge={true} movies2={DATA_ROW1}/>
+      <RowJson title ="Trending From Cloud" 
+          fetchUrl={requests.getTrendingCloud} isLarge={true}/>
+      <RowJson title ="Companies" rowpic="pic2.jpg"  />
+      <RowJson title ="Requirements" rowpic="pic3.jpg"  />
+      <RowJson title ="Frelance Opportunities" rowpic="pic4.jpg" />
+      <RowJson title ="Utilities" rowpic="pic5.jpg"/>
+
+*/

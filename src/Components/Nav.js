@@ -25,7 +25,8 @@ function Nav () {
             <div><img className="nav_logo"
             src={logopath} alt="Logo"
             /> </div>
-            <div > <table> <tr>
+            <div >
+            <table><tr>
                 <td className='nav_link'> Home </td>
                 <td className='nav_link'> New </td>
                 <td className='nav_link'> Popular </td>
